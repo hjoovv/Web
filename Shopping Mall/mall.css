@@ -132,7 +132,7 @@ ol, ul {
     border:solid 1px #000;
 }
 #footer{
-    clear:both;//clear : float을 사용했다면 clear가 따라와야 함
+    clear:both;//float을 사용했다면 clear가 따라와야 함
     width:100%;
     height:80px;
     background-color: #f9f9f9;
