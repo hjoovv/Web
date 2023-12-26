@@ -61,13 +61,9 @@ ol, ul {
     
     /* display: inline-block;*/
     float: left;
- // 박스 안의 글자를 가운데 정렬하려면 두 절차 有.
-// x축 기준 가운데 정렬을 위해서는 text-align :center 하고
-
-// y축으로 정렬하려면 박스의 높이가 h라하면 line-height : h px
-    text-align: center;
-    
-    line-height: 80px;
+    text-align: center;//x축 기준 중앙 정렬
+    line-height: 80px;//y축 기준 중앙 정렬
+   
 }
 
 #intro nav ul li.one {
