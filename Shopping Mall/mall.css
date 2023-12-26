@@ -1,0 +1,164 @@
+/* Default CSS */
+index.css
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;//y축 정렬을 중앙으로 하겠다 inline 요소들 중에만 사용가능 
+// img tag를 넣으면 미세하게 공백이 생기는데 그거 없애려면 img tag쓸때마다 default로 넣자.
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+.container {
+    width: 960px;
+}
+
+/* header CSS */
+#intro {
+    width: 100%;
+    height: 80px;
+    background-color: yellow;
+}
+
+#intro h1 {
+    float: left;
+
+    width: 50%;
+    height: 80px;
+    background-color: #fbfbfb;
+}
+
+#intro h1 a {
+// intro h1 a에서 상하배치 작업하기 위해서 block 요소로 바꿔줌
+그렇게 해야 밑줄에서 padding top작업과 같은 상하배치 작업 수행가능 
+    display: block;//a tag를 block 요소로 변환시켜야 width height적용 가능 
+    
+    padding: 22px 0 0 30px;
+    font-size: 30px;
+}
+
+#intro nav {
+    float: right;
+
+    width: 50%;
+    height: 80px;
+    background-color: pink;
+}
+
+#intro nav ul li {
+    width: 33.33333%;
+    height: 80px;
+    
+    /* display: inline-block;*/
+    float: left;
+ // 박스 안의 글자를 가운데 정렬하려면 두 절차 有.
+// x축 기준 가운데 정렬을 위해서는 text-align :center 하고
+
+// y축으로 정렬하려면 박스의 높이가 h라하면 line-height : h px
+    text-align: center;
+    
+    line-height: 80px;
+}
+
+#intro nav ul li.one {
+    background-color: #efeff6;
+}
+
+#intro nav ul li.two {
+    background-color: #dcdcec;
+}
+
+#intro nav ul li.three {
+    background-color: #cbcae3;
+}
+
+#intro nav ul li a {
+    font-size: 20px; 
+    font-weight: bold;
+}
+
+#main article{
+    width:50%;
+    height:320px;
+    float:left;
+//article에 float left를 조졌기 때문에 각각의 article 박스들은 연쇄적으로 2번은 1번 왼쪽에, 3번은 2번 왼쪽에… 연쇄적으로 이동함. 덕분에 박스들이 왼쪽에 정렬되어 하나의 라인에 쭉 이어지지 않고 width:50%로 인해 박스 두 개가 채워져 width가 채워지면 줄바꿈이 됨. 
+
+}
+#main article a{
+    display:block;
+    width:100%;
+    height:100%;
+}
+
+// one은 <li>의 자식이 아니라 <li>의 속성값이므로 띄어쓰기로 나타내는 것이 아니라 li.one 형태로
+#main article.one{
+    background-color: #532fa1;
+}
+
+#main article.two{
+    background-color: #a44789;
+}
+
+#main article.three{
+    background-color: #3ab6bc    
+}
+#main article img{
+    width:100%;//img에서 폭을100%로 설정한다는 것은 img는 a tag의 자식이기 때문에 a tag의 100%를 채운다는 말임. 
+
+}
+
+#main article h2{
+    color:#fff;
+    font-size: 25px;
+    text-align: center;
+    padding : 10px 0;
+}
+
+#main article.text{
+    width:100%;
+    height:66px;
+}
+#main article.text p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding:20px 0;//padding 10 0 두 개만 입력되면 앞에는 상하, 뒤는 좌우를 의미 
+    border:solid 1px #000;
+}
+#footer{
+    clear:both;//clear : float을 사용했다면 clear가 따라와야 함
+    width:100%;
+    height:80px;
+    background-color: #f9f9f9;
+}
+#footer .copyright{
+    float : left;
+    width:50%;
+}
+
+#footer .address{
+    float:right;
+    width:50%;
+}
+
+#footer .copyright p{
+    font-size: 14px;
+    color:#999;
+    padding : 32px 0 0 40px;
+}
+#footer .address p{
+    font-size: 14px;
+    color:#999;
+    padding: 32px 40px 0 0; 
+    text-align: right;
+}
