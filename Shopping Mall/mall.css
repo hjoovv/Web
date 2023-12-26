@@ -87,7 +87,7 @@ ol, ul {
     width:50%;
     height:320px;
     float:left;
-//article에 float left를 조졌기 때문에 각각의 article 박스들은 연쇄적으로 2번은 1번 왼쪽에, 3번은 2번 왼쪽에… 연쇄적으로 이동함. 덕분에 박스들이 왼쪽에 정렬되어 하나의 라인에 쭉 이어지지 않고 width:50%로 인해 박스 두 개가 채워져 width가 채워지면 줄바꿈이 됨. 
+//float적용한 것이 부모 요소의 width보다 커지면 줄바꿈 
 
 }
 #main article a{
