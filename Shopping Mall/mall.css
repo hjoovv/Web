@@ -158,3 +158,36 @@ ol, ul {
     padding: 32px 40px 0 0; 
     text-align: right;
 }
+
+/* 새로 추가되는 내용 : 애니메이션 */
+#intro nav ul li a { transition: color 0.3s; }
+#intro nav ul li a:hover { color: #917f7f; }
+
+#main article.one,
+#main article.two, 
+#main article.three{
+    transition : background-color 0.3s;
+}
+
+#main article.one:hover{
+    background-color:#8683bd
+}
+
+#main article.two:hover{
+    background-color: #bf7eac;
+}
+
+#main article.three:hover{
+    background-color:#75ccd0;
+}
+
+#main article img{
+    transition:transform 0.3s;
+}
+
+#main article img:hover{
+    transform:scale(1,1);
+}
+
+
+
