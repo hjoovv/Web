@@ -1,7 +1,7 @@
 var waittime = 500;
 var loop = 4;
 var count = 0;
-var paramarr = ['COSE222', 'COSE221', 'COSE389', 'COSE455'];
+var paramarr = ['COSE222', 'COSE221', 'COSE455', 'COSE389'];
 var numarr = ["00", "01", "00", "00"];
 NetFunnel.TS_BYPASS = true;
 NetFunnel.TS_MAX_NWAIT_COUNT = 0;
