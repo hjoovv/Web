@@ -1,5 +1,5 @@
 var waittime = 500;
-var loop = 2;
+var loop = 4;
 var count = 0;
 var paramarr = ['COSE222', 'COSE221', 'COSE389', 'COSE455'];
 var numarr = ["00", "01", "00", "00"];
